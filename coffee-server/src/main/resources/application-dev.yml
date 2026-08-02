@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/coffee_order?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
     username: root
-    password: mcfyjcy9hjw
+    password: databasepassword
     driver-class-name: com.mysql.cj.jdbc.Driver
     hikari:
       maximum-pool-size: 20
@@ -22,8 +22,8 @@ spring:
   mail:
     host: smtp.qq.com
     port: 465
-    username: 2930789735@qq.com
-    password: mkqqzoonifsuddac
+    username: example@qq.com
+    password: 授权码
     protocol: smtps
     properties:
       mail:
@@ -35,7 +35,7 @@ spring:
 
 tencent:
   map:
-    key: USIBZ-OZSO4-BFMUH-KOPL6-G4IDE-45FTF
+    key: 
 
 logging:
   level:
