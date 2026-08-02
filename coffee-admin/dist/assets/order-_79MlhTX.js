@@ -1,0 +1,1 @@
+import{K as e}from"./index-DkpA1XIh.js";function s(r){return e.get("/admin/orders",{params:r})}function i(r){return e.get(`/admin/orders/${r}`)}function a(r,t){return e.post(`/admin/orders/${r}/assign`,{riderId:t})}export{a,i as b,s as g};

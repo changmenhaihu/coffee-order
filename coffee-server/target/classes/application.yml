@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: coffee-order
+  profiles:
+    active: dev
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    default-property-inclusion: non_null
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 20MB
+
+server:
+  port: 8080
+  address: 0.0.0.0
+
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+jwt:
+  secret: CoffeeOrderSecretKey2024MustBeLongEnough
+  expiration: 7200
+  refresh-expiration: 604800
+
+deepseek:
+  api-key: ${DEEPSEEK_KEY:your-api-key}
+  api-url: https://api.deepseek.com
+  model: deepseek-v4-flash
+
+knife4j:
+  enable: true
+  setting:
+    language: zh_cn

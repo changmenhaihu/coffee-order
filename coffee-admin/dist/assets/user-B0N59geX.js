@@ -1,0 +1,1 @@
+import{K as s}from"./index-DkpA1XIh.js";function u(r){return s.get("/admin/users",{params:r})}function n(r,e){return s.put(`/admin/users/${r}`,e)}function a(r,e){return s.post(`/admin/users/${r}/recharge`,e)}export{u as g,a as r,n as u};

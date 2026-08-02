@@ -1,0 +1,1 @@
+import{K as e}from"./index-DkpA1XIh.js";function n(r){return e.get("/admin/riders",{params:r})}function d(r){return e.post("/admin/riders",r)}function a(r,t){return e.put(`/admin/riders/${r}`,t)}function s(r){return e.delete(`/admin/riders/${r}`)}function u(r){return e.get(`/admin/riders/${r}/track`)}export{u as a,d as c,s as d,n as g,a as u};
